@@ -1,0 +1,118 @@
+
+
+ 
+body {
+  background-color: #1E3A8A;  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+ 
+main, .main-table {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  background-color: #0F172A; 
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #3B82F6; 
+}
+
+ 
+h1, h2 {
+  color: #1E3A8A;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+ 
+footer, address {
+  text-align: center;
+  color: white;
+  margin: 2rem 0;
+}
+
+ 
+main a {
+  color: #2563EB; 
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+ 
+table.main-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-table td, .main-table th {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.header-cell {
+  background-color: #3B82F6;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.section-header {
+  font-weight: bold;
+  color: #1E3A8A;
+  background-color: #E0F2FE;
+  padding: 0.5rem;
+}
+
+.info-text {
+  margin: 1rem 0;
+}
+
+.centered {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+input[type="text"], input[type="password"], input[type="submit"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}

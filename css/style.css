@@ -9,5 +9,15 @@
   cellpadding: 5;
 }
 .header-cell {
-  
+  bacground-color:#99CCFF;
+  text-align: center;
+  font-size: 1.25em;
+  color: #000000;
+  font-weight: bold;
+}
+.section-header {
+  background-color: #FFF0D0;
+  color: #000000;
+  font-weight: bold;
+  padding: 5px;
 }

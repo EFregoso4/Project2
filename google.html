@@ -3,128 +3,122 @@
 <head>
     <meta charset="utf-8">
     <title>Google Issues Info Page</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/reset.css">
 </head>
 <body class="body-bg">
-<nav>
-	<ul>
-	<li><a href="index.html" title="Home">Home</a></li>
-	<li><a href="forum.html" title="forum">forum</a></li>
-	<li><a href="google.html" title="google">Goggle support</a></li>
-	</ul>
-	</nav>
-    <table class="main-table">
-        <tr>
-            <td colspan="2" class="header-cell">
-                <strong>google-issues — Google Issues mailing list</strong>
-            </td>
-        </tr>
-        <tr><td colspan="2"><p>&nbsp;</p></td></tr>
-        <tr>
-            <td class="section-header">About google-issues</td>
-            <td class="section-header">
-                <form method="POST" action="../listinfo/google-issues">English (USA)</form>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <p class="info-text">
-                    This is the mailing list for distribution of Google Issues postings. Archives are available at 
-                    <a href="https://groups.google.com/forum/#!forum/googleissues">Google Issues Archive</a>. 
-                    More details are available at 
-                    <a href="https://lauren.vortex.com/2017/05/11/announcing-the-google-issues-mailing-list">the full announcement</a>. 
-                    Moderated by <a href="https://lauren.vortex.com">Lauren Weinstein</a>.
-                </p>
-            </td>
-        </tr>
-        <tr><td colspan="2" class="section-header">Using google-issues</td></tr>
-        <tr>
-            <td colspan="2">
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Introduction">Introduction</a></li>
+            <li><a href="forum.html" title="Forum">Forum</a></li>
+            <li><a href="google.html" title="Google Support">Google Support</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="main-content">
+        <header class="header-cell">
+            <h1>google-issues — Google Issues mailing list</h1>
+        </header>
+
+        <section class="about">
+            <h2>About google-issues</h2>
+            <form method="POST" action="../listinfo/google-issues" aria-label="Language selection">
+                <label for="language">Language:</label>
+                <select name="language" id="language">
+                    <option selected>English (USA)</option>
+                </select>
+            </form>
+            <p class="info-text">
+                This is the mailing list for distribution of Google Issues postings. Archives are available at 
+                <a href="https://groups.google.com/forum/#!forum/googleissues">Google Issues Archive</a>. 
+                More details are available at 
+                <a href="https://lauren.vortex.com/2017/05/11/announcing-the-google-issues-mailing-list">the full announcement</a>. 
+                Moderated by <a href="https://lauren.vortex.com">Lauren Weinstein</a>.
+            </p>
+        </section>
+        <section>
+            <h2>Using google-issues</h2>
+            <p>
                 To post a message to all the list members, email 
                 <a href="mailto:google-issues@vortex.com">google-issues@vortex.com</a>.
-                <p>You can subscribe to the list, or change your existing subscription, below.</p>
-            </td>
-        </tr>
-        <tr><td colspan="2" class="section-header">Subscribing to google-issues</td></tr>
-        <tr>
-            <td colspan="2">
-                <p>
-                    Subscribe by filling out the form. You’ll receive an email for confirmation. 
-                    This is a hidden list—members are only visible to the admin.
-                </p>
-                <form method="POST" action="../subscribe/google-issues">
-                    <input type="hidden" name="sub_form_token" value="...">
-                    <table class="form-table">
-                        <tr>
-                            <td class="form-label">Your email address:</td>
-                            <td><input type="text" name="email" size="30"></td>
-                        </tr>
-                        <tr>
-                            <td class="form-label">Your name (optional):</td>
-                            <td><input type="text" name="fullname" size="30"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <small>
-                                    You may enter a privacy password. This provides only mild security. 
-                                    <b>Do not use a valuable password</b> as it may be emailed back to you.
-                                </small>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="form-label">Pick a password:</td>
-                            <td><input type="password" name="pw" size="15"></td>
-                        </tr>
-                        <tr>
-                            <td class="form-label">Reenter password:</td>
-                            <td><input type="password" name="pw-conf" size="15"></td>
-                        </tr>
-                        <tr>
-                            <td class="form-label">Preferred language:</td>
-                            <td>English (USA)</td>
-                        </tr>
-                        <tr>
-                            <td>Receive mail as digest?</td>
-                            <td>
-                                <input type="radio" name="digest" value="0" checked> No
-                                <input type="radio" name="digest" value="1"> Yes
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="form-submit">
-                                <input type="submit" name="email-button" value="Subscribe">
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-            </td>
-        </tr>
-        <tr><td colspan="2" class="section-header">google-issues Subscribers</td></tr>
-        <tr>
-            <td colspan="2">
-                <form method="POST" action="../roster/google-issues">
-                    <input type="hidden" name="language" value="en">
-                    <p><i>The subscribers list is only available to the list administrator.</i></p>
-                    <p>Enter admin email and password:</p>
-                    <div class="centered">
-                        Admin address: <input type="text" name="roster-email" size="20">
-                        Password: <input type="password" name="roster-pw" size="15">
-                        <input type="submit" name="SubscriberRoster" value="Visit Subscriber List">
-                    </div>
-                </form>
+            </p>
+            <p>You can subscribe to the list, or change your existing subscription, below.</p>
+        </section>
 
-                <form method="POST" action="../options/google-issues">
-                    <p>To unsubscribe or edit options, enter your email:</p>
-                    <div class="centered">
-                        <input type="text" name="email" size="30">
-                        <input type="submit" name="UserOptions" value="Unsubscribe or edit options">
-                        <input type="hidden" name="language" value="en">
-                    </div>
-                </form>
-            </td>
-        </tr>
-    </table>
+        <section>
+            <h2>Subscribing to google-issues</h2>
+            <p>
+                Subscribe by filling out the form. You’ll receive an email for confirmation. 
+                This is a hidden list—members are only visible to the admin.
+            </p>
+            <form method="POST" action="../subscribe/google-issues">
+                <input type="hidden" name="sub_form_token" value="...">
+                <div class="form-group">
+                    <label for="email">Your email address:</label>
+                    <input type="email" name="email" id="email" size="30" required>
+                </div>
+                <div class="form-group">
+                    <label for="fullname">Your name (optional):</label>
+                    <input type="text" name="fullname" id="fullname" size="30">
+                </div>
+                <div class="form-group">
+                    <small>
+                        You may enter a privacy password. This provides only mild security. 
+                        <strong>Do not use a valuable password</strong> as it may be emailed back to you.
+                    </small>
+                </div>
+                <div class="form-group">
+                    <label for="pw">Pick a password:</label>
+                    <input type="password" name="pw" id="pw" size="15">
+                </div>
+                <div class="form-group">
+                    <label for="pw-conf">Reenter password:</label>
+                    <input type="password" name="pw-conf" id="pw-conf" size="15">
+                </div>
+                <div class="form-group">
+                    <label for="language-select">Preferred language:</label>
+                    <select id="language-select" disabled>
+                        <option selected>English (USA)</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Receive mail as digest?</legend>
+                    <label><input type="radio" name="digest" value="0" checked> No</label>
+                    <label><input type="radio" name="digest" value="1"> Yes</label>
+                </fieldset>
+                <div class="form-submit">
+                    <input type="submit" name="email-button" value="Subscribe">
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>google-issues Subscribers</h2>
+
+            <form method="POST" action="../roster/google-issues">
+                <input type="hidden" name="language" value="en">
+                <p><em>The subscribers list is only available to the list administrator.</em></p>
+                <label for="roster-email">Admin address:</label>
+                <input type="email" name="roster-email" id="roster-email" size="20">
+                <label for="roster-pw">Password:</label>
+                <input type="password" name="roster-pw" id="roster-pw" size="15">
+                <input type="submit" name="SubscriberRoster" value="Visit Subscriber List">
+            </form>
+
+            <form method="POST" action="../options/google-issues">
+                <p>To unsubscribe or edit options, enter your email:</p>
+                <label for="unsubscribe-email">Your email:</label>
+                <input type="email" name="email" id="unsubscribe-email" size="30" required>
+                <input type="submit" name="UserOptions" value="Unsubscribe or edit options">
+                <input type="hidden" name="language" value="en">
+            </form>
+        </section>
+    </section>
+</main>
+
+<footer>
     <hr>
     <address>
         <a href="../listinfo/google-issues">google-issues</a> list run by 
@@ -132,5 +126,7 @@
         <a href="../admin/google-issues">Admin interface</a> (requires login)<br>
         <a href="../listinfo">Overview of all vortex.com mailing lists</a>
     </address>
+</footer>
+
 </body>
 </html>

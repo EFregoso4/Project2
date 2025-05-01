@@ -128,7 +128,7 @@ select {
 @media (max-width: 599px) {
   nav ul li a {
     padding: 0.75rem 1rem;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
      }
   input [type="submit"] {
     font-size: 1rem;

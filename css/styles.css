@@ -120,3 +120,7 @@ select {
   border-radius: 6px;
   box-sizing: border-box;
 }
+
+.form-group {
+  margin-bottom: 1.25rem;
+}

@@ -124,3 +124,17 @@ select {
 .form-group {
   margin-bottom: 1.25rem;
 }
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  input [type="text"],
+  input [type="password"],
+  input [type="email"],
+  input [type="submit"],
+  select {
+    width: 60%;
+  }
+}

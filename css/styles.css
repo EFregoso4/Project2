@@ -108,8 +108,15 @@ table.main-table {
   margin: 1rem 0;
 }
 
-input[type="text"], input[type="password"], input[type="submit"] {
+input [type="text"],
+input [type="password"],
+input [type="email"],
+input [type="submit"],
+select {
+  width: 90%;
+  max-width: 400px;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 6px;
+  box-sizing: border-box;
 }

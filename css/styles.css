@@ -138,3 +138,13 @@ select {
     width: 60%;
   }
 }
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 1000px;
+  }
+
+nav ul li a {
+  padding: lrem 2rem;
+  }
+}

@@ -35,12 +35,12 @@ nav ul li {
 nav ul li a {
   display: inline-block;
   padding: 1rem 1.5rem;
-  color: white;
+  color: #ff2400;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  background-color: #FF2400; 
+  background-color: #3B82F6; 
 }
 
 h1, h2 {

@@ -125,7 +125,7 @@ select {
   margin-bottom: 1.25rem;
 }
 
-@media (max-width: 499px) {
+@media (max-width: 599px) {
   nav ul li a {
     padding: 0.75rem 1rem;
     font-size: 0.95rem;

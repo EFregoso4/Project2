@@ -108,10 +108,10 @@ table.main-table {
   margin: 1rem 0;
 }
 
-input [type="text"],
-input [type="password"],
-input [type="email"],
-input [type="submit"],
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="submit"],
 select {
   width: 90%;
   max-width: 400px;
@@ -128,11 +128,11 @@ select {
 @media (max-width: 599px) {
   nav ul li a {
     padding: 0.75rem 1rem;
-    font-size: 1.1rem;
-     }
-  input [type="submit"] {
+    font-size: 1.1rem;  
+  }
+  input[type="submit"] {
     font-size: 1rem;
-    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -140,10 +140,10 @@ select {
     font-size: 2.5rem;
   }
 
-  input [type="text"],
-  input [type="password"],
-  input [type="email"],
-  input [type="submit"],
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="submit"],
   select {
     width: 60%;
   }
@@ -154,7 +154,7 @@ select {
     max-width: 1000px;
   }
 
-nav ul li a {
-  padding: 1rem 2rem;
+  nav ul li a {
+    padding: 1rem 2rem;  
   }
 }

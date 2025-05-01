@@ -125,6 +125,16 @@ select {
   margin-bottom: 1.25rem;
 }
 
+@media (max-width: 399px) {
+  nav ul li a {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+     }
+  input [type="submit"] {
+    font-size: 1rem;
+    }
+}
+
 @media (min-width: 1024px) {
   h1 {
     font-size: 2.5rem;

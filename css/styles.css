@@ -6,7 +6,6 @@ body {
   color: #000;
 }
 
- 
 main, .main-table {
   max-width: 900px;
   margin: 2rem auto;
@@ -16,6 +15,9 @@ main, .main-table {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+nav {
+  min-height: 60px;  
+}
 
 nav ul {
   list-style: none;
@@ -41,7 +43,6 @@ nav ul li a:hover {
   background-color: #3B82F6; 
 }
 
- 
 h1, h2 {
   color: #1E3A8A;
 }
@@ -56,14 +57,12 @@ h2 {
   font-size: 1.5rem;
 }
 
- 
 footer, address {
   text-align: center;
   color: white;
   margin: 2rem 0;
 }
 
- 
 main a {
   color: #2563EB; 
 }
@@ -72,7 +71,6 @@ main a:hover {
   text-decoration: underline;
 }
 
- 
 table.main-table {
   width: 100%;
   border-collapse: collapse;
@@ -126,10 +124,19 @@ select {
 }
 
 @media (max-width: 599px) {
-  nav ul li a {
-    padding: 0.75rem 1rem;
-    font-size: 1.1rem;  
+  nav {
+    min-height: 80px;  
   }
+
+  nav ul {
+    padding: 1rem 0;  
+  }
+
+  nav ul li a {
+    padding: 1.25rem 1.5rem;  
+    font-size: 1.2rem;         
+  }
+
   input[type="submit"] {
     font-size: 1rem;
   }
